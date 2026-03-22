@@ -1,0 +1,5 @@
+{
+  "name": "Aura: Private Offline AI",
+  "description": "A 100% private, offline-first AI learning assistant. All inference runs locally in your browser using WebGPU/WASM. No data ever leaves your device.",
+  "requestFramePermissions": ["microphone"]
+}
