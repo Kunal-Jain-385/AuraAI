@@ -61,8 +61,8 @@ export class LLMEngine {
     if (this.initialized) return;
     await RunAnywhere.initialize();
     await LlamaCPP.register({
-      wasmUrl: `${window.location.origin}/wasm/racommons-llamacpp.js?v=1`,
-      webgpuWasmUrl: `${window.location.origin}/wasm/racommons-llamacpp-webgpu.js?v=1`,
+      wasmUrl: `${window.location.origin}/wasm/racommons-llamacpp.js`,
+      webgpuWasmUrl: `${window.location.origin}/wasm/racommons-llamacpp-webgpu.js`,
     });
     ModelManager.registerModels(AVAILABLE_MODELS);
     this.initialized = true;
